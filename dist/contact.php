@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>JPRConsulting</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Font Awesome icons -->
+        <script src="https://kit.fontawesome.com/1bf7d77281.js" crossorigin="anonymous"></script>
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://unpkg.com/transition-style">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    </head>
+
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <div class="navegacionbar" >
+                <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+                    <div class="container px-5">
+                        <a class="navbar-brand" href="index.html">JPRConsulting</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.php">Contacto</a></li>
+                                <li class="nav-item"><a class="nav-link" href="pricing.html">Servicios</a></li>
+                                <li class="nav-item"><a class="nav-link" href="faq.html">Productos</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
+                                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                        <li><a class="dropdown-item" href="blog-home.html">Inclusion Web </a></li>
+                                        <li><a class="dropdown-item" href="blog-post.html">Accesibilidad Web</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <br class="Enblanco">/n </br>
+            <!-- Page content-->
+            <section class="py-5">
+                <div class="container px-5">
+                    <!-- Contact form-->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-envelope"></i></div>
+                            <h1 class="fw-bolder">Contacto</h1>
+                            <p class="lead fw-normal text-muted mb-0">Acercate a nosotros</p>
+                        </div>
+                        <div class="row gx-5 justify-content-center">
+                            <div class="col-lg-8 col-xl-6">
+                                <form name="form1" id="contactForm"  method="post" action='index.html'>
+                                    <!-- Name input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" name ="nombre" id="nombre" type="text" placeholder="Ingrese su nombre completo..."
+                                            data-sb-validations="required" />
+                                        <label for="name">Nombre</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">Nombre es requerido.</div>
+                                    </div>
+                                    <!-- Email address input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" name="email" id="email" type="email" placeholder="name@example.com"
+                                            data-sb-validations="required,email" />
+                                        <label for="email">Correo Electrónico<n/label>
+                                        <div class="invalid-feedback" data-sb-feedback="email:required">Correo Electrónico no es válido.</div>
+                                
+                                    </div>
+                                    <!-- Phone number input-->
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control" name="telefono" id="telefono" type="tel" placeholder="(123) 456-7890"
+                                            data-sb-validations="required" />
+                                        <label for="phone">Número de celular</label>
+                                        <div class="invalid-feedback" data-sb-feedback="phone:required">Número de celular requerido</div>
+                                    </div>
+                                    <!-- Message input-->
+                                    <div class="form-floating mb-3">
+                                        <textarea class="form-control" name="mensaje" id="mensaje" type="text"
+                                            placeholder="Enter your message here..." style="height: 10rem"
+                                            data-sb-validations="required"></textarea>
+                                        <label for="message">Mensaje</label>
+                                        <div class="invalid-feedback" data-sb-feedback="message:required">El mensaje es requerido.</div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="checkbox" required> Acepto la política de privacidad.
+                                    </div>
+                                    <div class="d-grid">
+                                        <input type="submit" class="btn btn-primary btn-lg " id="submitButton"/>
+                                    </div>
+                                </form>
+                                
+                                <?php
+                                    include("php/correo.php");
+                                ?>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact cards-->
+                    <div class="row gx-5 row-cols-2 row-cols-lg-4 py-5">
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-chat-dots"></i></div>
+                            <div class="h5 mb-2">Chatea con nosotros</div>
+                            <p class="text-muted mb-0">Chatea con nuestros especialistas</p>
+                        </div>
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-people"></i></div>
+                            <div class="h5">Pregunta a la comunidad</div>
+                            <p class="text-muted mb-0">Explore los foros de nuestra comunidad y comuníquese con otros
+                                usuarios.</p>
+                        </div>
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-question-circle"></i></div>
+                            <div class="h5">Centro de soporte</div>
+                            <p class="text-muted mb-0">Le damos soluciones a tus preguntas.</p>
+                        </div>
+                        <div class="col">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i
+                                    class="bi bi-telephone"></i></div>
+                            <div class="h5">Contactanos</div>
+                            <p class="text-muted mb-0">Llamanos 246 312 5800</p>
+                        </div>
+                    </div>
+                    <!-- Maps -->
+                    <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
+                        <div class="text-center mb-5">
+                            <h1 class="fw-bolder">Visitanos</h1>
+                            <p class="lead fw-normal text-muted mb-0">Nuestra Ubicación</p>
+
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d470.5878640779195!2d-98.18477086949156!3d19.338693715568116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfdf0210a2c5db%3A0xef28b4f9948f975!2sJPRconsulting!5e0!3m2!1ses-419!2smx!4v1683235643841!5m2!1ses-419!2smx"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-light py-5">
+            <div class="container">
+                <div class="row">  
+                    <div class="col-md-3">
+                        <h5 class="mb-4">Contacto</h5>
+                        <ul class="list-unstyled mb-4">
+                            <li><i class="fas fa-phone mr-2"></i> +(52) 246 312 58 00</li>
+                                <li><i class="fas fa-envelope mr-2"></i> juan.ramirez@jprconsulting.com</li>
+                                <li><i class="fas fa-envelope mr-2"></i> ventas@jprconsulting.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-4">Horarios de oficina </h5>
+                        <i class="fa-regular fa-calendar-days"></i> Lunes - Viernes 9:00 am - 6:00 pm.
+                    </div>
+                    <div class="col-md-6">
+                    <div class="eslogan">
+                        <h5>TRANSFORMAMOS TU VISIÓN EN UNA REALIDAD TECNOLÓGICA   </h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Header-->
+        <div class="sticke-container colored-icons">
+            <ul class="sticke">
+                <li class="img-fluid">
+                    <a href="https://www.facebook.com/jprconsulting.com.mx" title="Conectar con Facebook" data-tag="Conectar con Facebook" onclick="window.open(this.href, this.target, 'width=770,height=368');  return false;"><img src="Images\face.png" alt="Responsive image" width="42" height="42">
+                    <i class="link-facebook fab fa-facebook-square" style="font-size:0px;margin-left: 0px"></i><p> <br> </a>
+                </li>
+                <h5> &nbsp </h5>    
+                <li class="img-fluid">
+                    <a href="https://api.whatsapp.com/send?phone=+522461780836&text=Hola&type=phone_number&app_absent=0"title="Conectar con Whatsapp" data-tag="Conectar con whatsapp" onclick="window.open(this.href, this.target, 'width=770,height=368');  return false;"><img src="Images\whats.png"    width="40" height="40">
+                    <p><br></a></p>
+                </li> 
+                <h5> &nbsp </h5>
+                <li class="img-fluid">
+                    <a href="https://mx.linkedin.com/in/juan-pablo-b1749892" title="Conectar con Linkedin" data-tag="Conectar con Facebook" onclick="window.open(this.href, this.target, 'width=770,height=368');  return false;" > <img src="Images\linkf.png" alt="Responsive image" width="40" height="40">
+                    <p> <br></a></p>
+                </li> 
+            </ul>
+            <h5> &nbsp </h5>
+            <ul class="stick">
+                <li class="img-fluid">
+                    <div align="right" id="google_translate_element" class="google"></div>
+                </li>
+            </ul>
+            <ul class="stick">
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+                    }
+                </script>
+            </ul>
+        </div>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
