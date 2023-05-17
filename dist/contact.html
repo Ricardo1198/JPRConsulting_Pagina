@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content />
         <meta name="author" content />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>JPRConsulting</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -63,7 +64,7 @@
                                 <form action="https://formsubmit.co/integraciones.jprconsulting@gmail.com" method="POST">
                                     <!-- Name input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" name ="nombre" id="nombre" type="text" placeholder="Ingrese su nombre completo..."
+                                        <input class="form-control" name ="name" id="nombre" type="text" placeholder="Ingrese su nombre completo..."
                                             data-sb-validations="required" />
                                         <label for="name">Nombre Completo</label>
                                         <div class="invalid-feedback" data-sb-feedback="name:required">Nombre es requerido.</div>
@@ -78,14 +79,14 @@
                                     </div>
                                     <!-- Phone number input-->
                                     <div class="form-floating mb-3">
-                                        <input class="form-control" name="telefono" id="telefono" type="tel" placeholder="(123) 456-7890"
+                                        <input class="form-control" name="phone_number" id="telefono" type="tel" placeholder="(123) 456-7890"
                                             data-sb-validations="required" />
                                         <label for="phone">Número de celular</label>
                                         <div class="invalid-feedback" data-sb-feedback="phone:required">Número de celular requerido</div>
                                     </div>
                                     <!-- Message input-->
                                     <div class="form-floating mb-3">
-                                        <textarea class="form-control" name="mensaje" id="mensaje" type="text"
+                                        <textarea class="form-control" name="comments" id="mensaje" type="text"
                                             placeholder="Enter your message here..." style="height: 10rem"
                                             data-sb-validations="required"></textarea>
                                         <label for="message">Mensaje</label>
@@ -94,7 +95,7 @@
                                     <div class="d-grid">
                                         <input type="submit" class="btn btn-primary btn-lg " value="Enviar"/>
                                     </div>
-                                    <input type="hidden" name="_next" value="./contacto.html">
+                                    <input type="hidden" name="_next" value="http://localhost:8080/clon/JRPCONSULTING-PAGE/dist/contact.html">
                                     <input type="hidden" name="_captcha" value="false">
                                 </form>
                             </div>
