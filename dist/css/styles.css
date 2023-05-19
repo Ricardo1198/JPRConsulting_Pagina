@@ -12712,3 +12712,9 @@ text-align: right;
 .imagenblog{
   width: 50%;
 }
+
+.videoframe{
+  background-color: magenta;
+  align-items: center;
+  padding-left: 200px;
+}
