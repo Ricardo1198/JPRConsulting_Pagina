@@ -12718,15 +12718,15 @@ text-align: right;
 .videoframe{
   background-color: magenta;
   align-items: center;
-  padding-left: 200px;
+  padding-left: 20px;
 }
 
 .responsive-iframe {
   position:relative;
-  top: 10%;
+  top: 5%;
   left: 5%;
-  bottom: 10%;
-  right: 0;
+  bottom: 5%;
+  right: 5%;
   width: auto%;
   height: auto%;
 }
