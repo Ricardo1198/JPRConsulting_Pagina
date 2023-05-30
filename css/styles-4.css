@@ -2536,3 +2536,9 @@ article{
     width: 100%;
     height: 110px;
 }
+
+/* Clase active */
+.active a{
+    color:#0AC6FC; 
+    background-color:inherit;
+}
