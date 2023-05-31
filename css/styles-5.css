@@ -850,6 +850,14 @@ input[type='checkbox'] {
 	margin-left: auto;
 }
 
+.card-image3 {
+	width: 12rem;
+	height: 7rem;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-left: auto;
+}
+
 .cards-1 .card-title {
 	margin-bottom: 0.875rem;
 }
