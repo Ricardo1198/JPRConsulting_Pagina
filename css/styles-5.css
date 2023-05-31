@@ -842,6 +842,14 @@ input[type='checkbox'] {
 	margin-left: auto;
 }
 
+.card-image2 {
+	width: 12rem;
+	height: 6.5rem;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-left: auto;
+}
+
 .cards-1 .card-title {
 	margin-bottom: 0.875rem;
 }
