@@ -2366,6 +2366,7 @@ article{
 
 .one_quarter {
     width: 21.8421%;
+    height: 100%;
 }
 
 .last, .group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
