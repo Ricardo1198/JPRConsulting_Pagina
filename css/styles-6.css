@@ -1043,6 +1043,24 @@ input[type='checkbox'] {
 	text-align: center;
 }
 
+.cards-2 .card .card-title2 {
+	margin-bottom: 0.625rem;
+	color: #393939;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	text-align: center;
+}
+
+.cards-2 .card .card-title2:hover {
+	margin-bottom: 0.625rem;
+	color: #0AC6FC;
+	font-weight: 700;
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	text-align: center;
+}
+
 .cards-2 .card .card-subtitle {
 	margin-bottom: 1.75rem;
 }
