@@ -2227,6 +2227,7 @@ a:hover.back-to-top {
     margin-bottom:30px; 
     padding:25px 0 0 0;
     display: flex;
+    height: 100%;
 }
 
 #services li article {
@@ -2387,7 +2388,6 @@ article{
 
 .one_quarter {
     width: 21.8421%;
-    height: 100%;
 }
 
 .last, .group .group > *:last-child, .clear .clear > *:last-child, .clear .group > *:last-child, .group .clear > *:last-child{margin-bottom:0;}/* Experimental - Needs more testing in different situations, stops double margin when stacking */
@@ -2534,7 +2534,7 @@ article{
 
 	.sectiontitle{max-width:none;}
 	.sd-third > li, .grid-3{max-width:348px;}/* Restrict the width to the one_third grid element in smaller devices */
-	.grid-3{margin:0 auto;}
+	.grid-3{margin:0 auto; height: 100%;}
 	.grid-3 > li:nth-last-child(-n+4){margin-bottom:50px;}
 	.grid-3 > li:last-child{margin-bottom:0;}
 
