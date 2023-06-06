@@ -852,8 +852,8 @@ input[type='checkbox'] {
 }
 
 .card-image3 {
-	width: 6rem;
-	height: 6rem;
+	width: 50%;
+	height: 50%;
 	margin-right: auto;
 	margin-bottom: 2rem;
 	margin-left: auto;
