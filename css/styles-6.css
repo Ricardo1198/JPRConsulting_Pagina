@@ -851,6 +851,15 @@ input[type='checkbox'] {
     object-fit: cover;
 }
 
+.card-image3 {
+	width: 6rem;
+	height: 6rem;
+	margin-right: auto;
+	margin-bottom: 2rem;
+	margin-left: auto;
+    object-fit: cover;
+}
+
 .cards-1 .card-title {
 	margin-bottom: 0.875rem;
 }
